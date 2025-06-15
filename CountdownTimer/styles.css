@@ -1,0 +1,133 @@
+body {
+    background-color: #4e4e57;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #6a6a74;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#countdown div {
+    background-color: #8a8a94;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin: 0 10px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#countdown div span {
+    color: rgb(195, 196, 196);
+    font-size: xxx-large;
+}
+
+h2 {
+    font-size: 1.9rem;
+}
+
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background-color: #8a8a94;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#progress-bar {
+    height: 100%;
+    background: seagreen;
+    width: 0%;
+    transition: width 1s ease-in-out;
+}
+
+@media (max-width: 700px) {
+    #countdown {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #countdown div {
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    #countdown div span {
+        font-size: xx-large;
+    }
+}
+
+
+/* input end Date section */
+#date-input {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#date-input label {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: rgb(200, 200, 200);
+}
+
+#date-input input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+#date-input button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: seagreen;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
